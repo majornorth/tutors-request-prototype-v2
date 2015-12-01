@@ -18,6 +18,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 
+        <script type="text/javascript" src="js/main.js"></script>
+
         <style>
             body {
                 padding-top: 50px;
@@ -70,151 +72,319 @@
                    <p>Hey tutors! I'm in</p>
 
                    <span class="dropdown">
-                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <button class="btn btn-default dropdown-toggle" type="button" id="student-grade" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                        undergrad
                        <span class="caret"></span>
                      </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                       <li><a href="#">high school</a></li>
-                       <li><a href="#">grad school</a></li>
-                       <li><a href="#">middle school</a></li>
-                       <li><a href="#">school of life</a></li>
+                     <ul class="dropdown-menu" aria-labelledby="student-grade">
+                       <li><a href="#" class="get-grade">high school</a></li>
+                       <li><a href="#" class="get-grade">grad school</a></li>
+                       <li><a href="#" class="get-grade">middle school</a></li>
+                       <li><a href="#" class="get-grade">school of life</a></li>
                      </ul>
                    </span>
 
                    <p>taking</p>
 
                    <select class="js-example-basic-single">
-                     <option value="AL">Algebra</option>
+                     <option value="AL" class="course-title">Algebra</option>
                      <option value="WY">Biology</option>
                      <option value="WY">Business</option>
                      <option value="WY">Computer Science</option>
                      <option value="WY">Spanish</option>
                    </select>
 
-                   <p>at</p>
-
-                   <select class="js-example-basic-single">
-                     <option value="AL">Iowa State University</option>
-                     <option value="WY">Florida State University</option>
-                     <option value="WY">Harvard University</option>
-                     <option value="WY">The University of North Carolina</option>
-                     <option value="WY">The University of California Los Angeles</option>
-                   </select>
-
                    <p>and I need help with a</p>
 
                    <span class="dropdown">
-                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <button class="btn btn-default dropdown-toggle" type="button" id="help-type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                        homework assignment
                        <span class="caret"></span>
                      </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#">exam</a></li>
-                       <li><a href="#">lab</a></li>
-                       <li><a href="#">problem set</a></li>
-                       <li><a href="#">essay</a></li>
-                       <li><a href="#">midterms</a></li>
-                       <li><a href="#">finals</a></li>
+                     <ul class="dropdown-menu help-dropdown" aria-labelledby="help-type">
+                      <li><a href="#" class="get-type">exam</a></li>
+                       <li><a href="#" class="get-type">lab</a></li>
+                       <li><a href="#" class="get-type">problem set</a></li>
+                       <li><a href="#" class="get-type">essay</a></li>
+                       <li><a href="#" class="get-type">midterms</a></li>
+                       <li><a href="#" class="get-type">finals</a></li>
                      </ul>
                    </span>.
 
 
                    <p>I'd like help batman as soon as</p>
 
-                   <br />
                    <span class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="help-soon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                       2:00pm
                       <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#">3:00pm</a></li>
-                      <li><a href="#">4:00pm</a></li>
-                      <li><a href="#">5:00pm</a></li>
-                      <li><a href="#">6:00pm</a></li>
-                      <li><a href="#">7:00pm</a></li>
-                      <li><a href="#">8:00pm</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="help-soon">
+                      <li><a href="#" class="get-soon">12:00pm</a></li>
+                      <li><a href="#" class="get-soon">12:15pm</a></li>
+                      <li><a href="#" class="get-soon">12:30pm</a></li>
+                      <li><a href="#" class="get-soon">12:45pm</a></li>
+                      <li><a href="#" class="get-soon">1:15pm</a></li>
+                      <li><a href="#" class="get-soon">1:30pm</a></li>
+                      <li><a href="#" class="get-soon">1:45pm</a></li>
+                      <li><a href="#" class="get-soon">2:00pm</a></li>
+                      <li><a href="#" class="get-soon">2:15pm</a></li>
+                      <li><a href="#" class="get-soon">2:30pm</a></li>
+                      <li><a href="#" class="get-soon">2:45pm</a></li>
+                      <li><a href="#" class="get-soon">3:00pm</a></li>
+                      <li><a href="#" class="get-soon">3:15pm</a></li>
+                      <li><a href="#" class="get-soon">3:30pm</a></li>
+                      <li><a href="#" class="get-soon">3:45pm</a></li>
+                      <li><a href="#" class="get-soon">4:00pm</a></li>
+                      <li><a href="#" class="get-soon">4:15pm</a></li>
+                      <li><a href="#" class="get-soon">4:30pm</a></li>
+                      <li><a href="#" class="get-soon">4:45pm</a></li>
+                      <li><a href="#" class="get-soon">5:00pm</a></li>
+                      <li><a href="#" class="get-soon">5:15pm</a></li>
+                      <li><a href="#" class="get-soon">5:30pm</a></li>
+                      <li><a href="#" class="get-soon">5:45pm</a></li>
+                      <li><a href="#" class="get-soon">6:00pm</a></li>
+                      <li><a href="#" class="get-soon">6:15pm</a></li>
+                      <li><a href="#" class="get-soon">6:30pm</a></li>
+                      <li><a href="#" class="get-soon">6:45pm</a></li>
+                      <li><a href="#" class="get-soon">7:00pm</a></li>
+                      <li><a href="#" class="get-soon">7:15pm</a></li>
+                      <li><a href="#" class="get-soon">7:30pm</a></li>
+                      <li><a href="#" class="get-soon">7:45pm</a></li>
+                      <li><a href="#" class="get-soon">8:00pm</a></li>
+                      <li><a href="#" class="get-soon">8:15pm</a></li>
+                      <li><a href="#" class="get-soon">8:30pm</a></li>
+                      <li><a href="#" class="get-soon">8:45pm</a></li>
+                      <li><a href="#" class="get-soon">9:00pm</a></li>
+                      <li><a href="#" class="get-soon">9:15pm</a></li>
+                      <li><a href="#" class="get-soon">9:30pm</a></li>
+                      <li><a href="#" class="get-soon">9:45pm</a></li>
+                      <li><a href="#" class="get-soon">10:00pm</a></li>
+                      <li><a href="#" class="get-soon">10:15pm</a></li>
+                      <li><a href="#" class="get-soon">10:30pm</a></li>
+                      <li><a href="#" class="get-soon">10:45pm</a></li>
+                      <li><a href="#" class="get-soon">11:00pm</a></li>
+                      <li><a href="#" class="get-soon">11:15pm</a></li>
+                      <li><a href="#" class="get-soon">11:30pm</a></li>
+                      <li><a href="#" class="get-soon">11:45pm</a></li>
+                      <li><a href="#" class="get-soon">12:00am</a></li>
+                      <li><a href="#" class="get-soon">12:15am</a></li>
+                      <li><a href="#" class="get-soon">12:30am</a></li>
+                      <li><a href="#" class="get-soon">12:45am</a></li>
+                      <li><a href="#" class="get-soon">1:00am</a></li>
+                      <li><a href="#" class="get-soon">1:15am</a></li>
+                      <li><a href="#" class="get-soon">1:30am</a></li>
+                      <li><a href="#" class="get-soon">1:45am</a></li>
+                      <li><a href="#" class="get-soon">2:00am</a></li>
+                      <li><a href="#" class="get-soon">2:15am</a></li>
+                      <li><a href="#" class="get-soon">2:30am</a></li>
+                      <li><a href="#" class="get-soon">2:45am</a></li>
+                      <li><a href="#" class="get-soon">3:00am</a></li>
+                      <li><a href="#" class="get-soon">3:15am</a></li>
+                      <li><a href="#" class="get-soon">3:30am</a></li>
+                      <li><a href="#" class="get-soon">3:45am</a></li>
+                      <li><a href="#" class="get-soon">4:00am</a></li>
+                      <li><a href="#" class="get-soon">4:15am</a></li>
+                      <li><a href="#" class="get-soon">4:30am</a></li>
+                      <li><a href="#" class="get-soon">4:45am</a></li>
+                      <li><a href="#" class="get-soon">5:00am</a></li>
+                      <li><a href="#" class="get-soon">5:15am</a></li>
+                      <li><a href="#" class="get-soon">5:30am</a></li>
+                      <li><a href="#" class="get-soon">5:45am</a></li>
+                      <li><a href="#" class="get-soon">6:00am</a></li>
+                      <li><a href="#" class="get-soon">6:15am</a></li>
+                      <li><a href="#" class="get-soon">6:30am</a></li>
+                      <li><a href="#" class="get-soon">6:45am</a></li>
+                      <li><a href="#" class="get-soon">7:00am</a></li>
+                      <li><a href="#" class="get-soon">7:15am</a></li>
+                      <li><a href="#" class="get-soon">7:30am</a></li>
+                      <li><a href="#" class="get-soon">7:45am</a></li>
+                      <li><a href="#" class="get-soon">8:00am</a></li>
+                      <li><a href="#" class="get-soon">8:15am</a></li>
+                      <li><a href="#" class="get-soon">8:30am</a></li>
+                      <li><a href="#" class="get-soon">8:45am</a></li>
+                      <li><a href="#" class="get-soon">9:00am</a></li>
+                      <li><a href="#" class="get-soon">9:15am</a></li>
+                      <li><a href="#" class="get-soon">9:30am</a></li>
+                      <li><a href="#" class="get-soon">9:45am</a></li>
+                      <li><a href="#" class="get-soon">10:00am</a></li>
+                      <li><a href="#" class="get-soon">10:15am</a></li>
+                      <li><a href="#" class="get-soon">10:30am</a></li>
+                      <li><a href="#" class="get-soon">10:45am</a></li>
+                      <li><a href="#" class="get-soon">11:00am</a></li>
+                      <li><a href="#" class="get-soon">11:15am</a></li>
+                      <li><a href="#" class="get-soon">11:30am</a></li>
+                      <li><a href="#" class="get-soon">11:15am</a></li>
                     </ul>
                   </span>
 
                    <p>, if possible, and the latest I need help is</p>
 
                    <span class="dropdown">
-                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <button class="btn btn-default dropdown-toggle" type="button" id="help-late" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                        6:00pm
                        <span class="caret"></span>
                      </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                       <li><a href="#">7:00pm</a></li>
-                       <li><a href="#">8:00pm</a></li>
-                       <li><a href="#">9:00pm</a></li>
-                       <li><a href="#">10:00pm</a></li>
-                       <li><a href="#">11:00pm</a></li>
-                       <li><a href="#">12:00pm</a></li>
+                     <ul class="dropdown-menu" aria-labelledby="help-late">
+                       <ul class="dropdown-menu" aria-labelledby="help-soon">
+                         <li><a href="#" class="get-late">12:00pm</a></li>
+                         <li><a href="#" class="get-late">12:15pm</a></li>
+                         <li><a href="#" class="get-late">12:30pm</a></li>
+                         <li><a href="#" class="get-late">12:45pm</a></li>
+                         <li><a href="#" class="get-late">1:15pm</a></li>
+                         <li><a href="#" class="get-late">1:30pm</a></li>
+                         <li><a href="#" class="get-late">1:45pm</a></li>
+                         <li><a href="#" class="get-late">2:00pm</a></li>
+                         <li><a href="#" class="get-late">2:15pm</a></li>
+                         <li><a href="#" class="get-late">2:30pm</a></li>
+                         <li><a href="#" class="get-late">2:45pm</a></li>
+                         <li><a href="#" class="get-late">3:00pm</a></li>
+                         <li><a href="#" class="get-late">3:15pm</a></li>
+                         <li><a href="#" class="get-late">3:30pm</a></li>
+                         <li><a href="#" class="get-late">3:45pm</a></li>
+                         <li><a href="#" class="get-late">4:00pm</a></li>
+                         <li><a href="#" class="get-late">4:15pm</a></li>
+                         <li><a href="#" class="get-late">4:30pm</a></li>
+                         <li><a href="#" class="get-late">4:45pm</a></li>
+                         <li><a href="#" class="get-late">5:00pm</a></li>
+                         <li><a href="#" class="get-late">5:15pm</a></li>
+                         <li><a href="#" class="get-late">5:30pm</a></li>
+                         <li><a href="#" class="get-late">5:45pm</a></li>
+                         <li><a href="#" class="get-late">6:00pm</a></li>
+                         <li><a href="#" class="get-late">6:15pm</a></li>
+                         <li><a href="#" class="get-late">6:30pm</a></li>
+                         <li><a href="#" class="get-late">6:45pm</a></li>
+                         <li><a href="#" class="get-late">7:00pm</a></li>
+                         <li><a href="#" class="get-late">7:15pm</a></li>
+                         <li><a href="#" class="get-late">7:30pm</a></li>
+                         <li><a href="#" class="get-late">7:45pm</a></li>
+                         <li><a href="#" class="get-late">8:00pm</a></li>
+                         <li><a href="#" class="get-late">8:15pm</a></li>
+                         <li><a href="#" class="get-late">8:30pm</a></li>
+                         <li><a href="#" class="get-late">8:45pm</a></li>
+                         <li><a href="#" class="get-late">9:00pm</a></li>
+                         <li><a href="#" class="get-late">9:15pm</a></li>
+                         <li><a href="#" class="get-late">9:30pm</a></li>
+                         <li><a href="#" class="get-late">9:45pm</a></li>
+                         <li><a href="#" class="get-late">10:00pm</a></li>
+                         <li><a href="#" class="get-late">10:15pm</a></li>
+                         <li><a href="#" class="get-late">10:30pm</a></li>
+                         <li><a href="#" class="get-late">10:45pm</a></li>
+                         <li><a href="#" class="get-late">11:00pm</a></li>
+                         <li><a href="#" class="get-late">11:15pm</a></li>
+                         <li><a href="#" class="get-late">11:30pm</a></li>
+                         <li><a href="#" class="get-late">11:45pm</a></li>
+                         <li><a href="#" class="get-late">12:00am</a></li>
+                         <li><a href="#" class="get-late">12:15am</a></li>
+                         <li><a href="#" class="get-late">12:30am</a></li>
+                         <li><a href="#" class="get-late">12:45am</a></li>
+                         <li><a href="#" class="get-late">1:00am</a></li>
+                         <li><a href="#" class="get-late">1:15am</a></li>
+                         <li><a href="#" class="get-late">1:30am</a></li>
+                         <li><a href="#" class="get-late">1:45am</a></li>
+                         <li><a href="#" class="get-late">2:00am</a></li>
+                         <li><a href="#" class="get-late">2:15am</a></li>
+                         <li><a href="#" class="get-late">2:30am</a></li>
+                         <li><a href="#" class="get-late">2:45am</a></li>
+                         <li><a href="#" class="get-late">3:00am</a></li>
+                         <li><a href="#" class="get-late">3:15am</a></li>
+                         <li><a href="#" class="get-late">3:30am</a></li>
+                         <li><a href="#" class="get-late">3:45am</a></li>
+                         <li><a href="#" class="get-late">4:00am</a></li>
+                         <li><a href="#" class="get-late">4:15am</a></li>
+                         <li><a href="#" class="get-late">4:30am</a></li>
+                         <li><a href="#" class="get-late">4:45am</a></li>
+                         <li><a href="#" class="get-late">5:00am</a></li>
+                         <li><a href="#" class="get-late">5:15am</a></li>
+                         <li><a href="#" class="get-late">5:30am</a></li>
+                         <li><a href="#" class="get-late">5:45am</a></li>
+                         <li><a href="#" class="get-late">6:00am</a></li>
+                         <li><a href="#" class="get-late">6:15am</a></li>
+                         <li><a href="#" class="get-late">6:30am</a></li>
+                         <li><a href="#" class="get-late">6:45am</a></li>
+                         <li><a href="#" class="get-late">7:00am</a></li>
+                         <li><a href="#" class="get-late">7:15am</a></li>
+                         <li><a href="#" class="get-late">7:30am</a></li>
+                         <li><a href="#" class="get-late">7:45am</a></li>
+                         <li><a href="#" class="get-late">8:00am</a></li>
+                         <li><a href="#" class="get-late">8:15am</a></li>
+                         <li><a href="#" class="get-late">8:30am</a></li>
+                         <li><a href="#" class="get-late">8:45am</a></li>
+                         <li><a href="#" class="get-late">9:00am</a></li>
+                         <li><a href="#" class="get-late">9:15am</a></li>
+                         <li><a href="#" class="get-late">9:30am</a></li>
+                         <li><a href="#" class="get-late">9:45am</a></li>
+                         <li><a href="#" class="get-late">10:00am</a></li>
+                         <li><a href="#" class="get-late">10:15am</a></li>
+                         <li><a href="#" class="get-late">10:30am</a></li>
+                         <li><a href="#" class="get-late">10:45am</a></li>
+                         <li><a href="#" class="get-late">11:00am</a></li>
+                         <li><a href="#" class="get-late">11:15am</a></li>
+                         <li><a href="#" class="get-late">11:30am</a></li>
+                         <li><a href="#" class="get-late">11:15am</a></li>
                      </ul>
                    </span>
 
                    <p>I'd like to work with a</p>
 
                    <span class="dropdown">
-                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <button class="btn btn-default dropdown-toggle" type="button" id="gender-pref" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                        female
                        <span class="caret"></span>
                      </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                       <li><a href="#">male</a></li>
+                     <ul class="dropdown-menu" aria-labelledby="gender-pref">
+                       <li><a href="#" class="get-gender">male</a></li>
                      </ul>
                    </span>
 
                    <span class="dropdown">
-                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <button class="btn btn-default dropdown-toggle" type="button" id="tutor-authority" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                        college student
                        <span class="caret"></span>
                      </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                       <li><a href="#">recent grad</a></li>
-                       <li><a href="#">professional tutor</a></li>
+                     <ul class="dropdown-menu" aria-labelledby="tutor-authority">
+                       <li><a href="#" class="get-authority recent-grad">recent grad</a></li>
+                       <li><a href="#" class="get-authority pro-tutor">professional tutor</a></li>
                      </ul>
                    </span>
 
                    <p>for</p>
 
                    <span class="dropdown">
-                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <button class="btn btn-default dropdown-toggle" type="button" id="tutor-relationship" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                        one lesson
                        <span class="caret"></span>
                      </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                       <li><a href="#">recurring lessons</a></li>
+                     <ul class="dropdown-menu" aria-labelledby="tutor-relationship">
+                       <li><a href="#" class="get-relationship">recurring lessons</a></li>
                      </ul>
                    </span>
 
                    <p>with the goal of</p>
 
                    <span class="dropdown">
-                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <button class="btn btn-default dropdown-toggle" type="button" id="tutoring-goal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                        understanding concepts
                        <span class="caret"></span>
                      </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                       <li><a href="#">improving grades</a></li>
-                       <li><a href="#">getting ahead</a></li>
-                       <li><a href="#">increasing confidence</a></li>
-                       <li><a href="#">test preparation</a></li>
-                       <li><a href="#">learning a new skill</a></li>
+                     <ul class="dropdown-menu" aria-labelledby="tutoring-goals">
+                       <li><a href="#" class="get-goals">improving grades</a></li>
+                       <li><a href="#" class="get-goals">getting ahead</a></li>
+                       <li><a href="#" class="get-goals">increasing confidence</a></li>
+                       <li><a href="#" class="get-goals">test preparation</a></li>
+                       <li><a href="#" class="get-goals">learning a new skill</a></li>
                      </ul>
                    </span>
 
                    <p>. I</p>
 
                    <span class="dropdown">
-                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <button class="btn btn-default dropdown-toggle" type="button" id="work-completed" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                        have
                        <span class="caret"></span>
                      </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                       <li><a href="#">have not</a></li>
+                     <ul class="dropdown-menu" aria-labelledby="work-completed">
+                       <li><a href="#" class="get-completed">have not</a></li>
                      </ul>
                    </span>
 
